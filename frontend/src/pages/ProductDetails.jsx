@@ -14,6 +14,7 @@ function ProductDetails() {
   const relatedProducts = products.filter((item) => item.category === product.category && product.id !== item.id)
 
   const [selectedImage, setSelectedImage] = useState(product.images[0])
+  const [quantity, setQuantity] = useState(1)
 
   if(!product){
     return <h1 className="text-5xl text-slate-600 text-center mt-8">Product not Found!</h1>
@@ -90,6 +91,42 @@ function ProductDetails() {
         <p className="text-2xl font-semibold text-green-600 mt-4">
           {product.price}
         </p>
+
+        <div className="flex items-center gap-4 mt-8">
+          <button
+            type="button"
+            onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
+            className="w-10 h-10 rounded-lg border border-slate-300 text-xl font-bold"
+          >
+            -
+          </button>
+          <span className="text-lg font-semibold"> {quantity} </span>
+          <button
+            type="button"
+            onClick={() => setQuantity((prev) => prev + 1)}
+            className="w-10 h-10 rounded-lg border border-slate-300 text-xl font-bold"
+          >
+            +
+          </button>
+        </div>
+
+        <div className="mt-8 bg-slate-100 p-5 rounded-xl">
+          <p className="text-sm uppercase tracking-widest text-slate-500">
+            Shopping Summary
+          </p>
+
+          <h3 className="text-xl font-bold text-slate-900 mt-2">
+            {product.name}
+          </h3>
+
+          <p className="text-slate-600 mt-2">
+            Quantity: {quantity}
+          </p>
+
+          <p className="text-slate-600 mt-2">
+            Price: {product.price}
+          </p>
+        </div>
 
         <p className="text-gray-600 mt-8 leading-8">
           {product.description}

@@ -57,6 +57,15 @@ function FeaturedProducts() {
                     Explore quality solar products carefully selected for reliable, efficient and long-lasting power solutions
                 </p>
             </div>
+            <div className="flex justify-center">
+                {
+                    filteredProducts.length === 0 && (
+                        <p className="text-slate-600 mt-10ntext-center text-2xl font-bold capitalize">
+                            No product Found!
+                        </p>
+                    )
+                }
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
                 {
                     filteredProducts.map((product) => (
