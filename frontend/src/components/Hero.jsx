@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="bg-slate-200">
+    <section className="bg-slate-200 mt-12">
         <div className="max-w-7xl mx-auto px-8 py-20">
             <div className="flex items-center justify-between">
                 {/* left side */}

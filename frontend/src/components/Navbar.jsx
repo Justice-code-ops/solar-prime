@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="bg-slate-900 text-white px-8 py-4">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-slate-900 text-white px-8 py-4">
         <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold">
                 ☀️Solar Prime
