@@ -20,19 +20,19 @@ function ProductDetails() {
     return <h1 className="text-5xl text-slate-600 text-center mt-8">Product not Found!</h1>
   }
   return (
-    <section className="flex items-start max-w-6xl mx-auto py-20 px-8">
+    <section className="flex flex-col lg:flex-row lg:items-start gap-8 lg:max-w-6xl mx-auto py-10 px-2">
       <Link to={'/'}>
         <div className="flex items-center justify-center w-12 h-12 border border-green-500 hover:bg-green-100 rounded-full absolute inset-5 transition-all duration-300">
           <FaArrowLeftLong className="text-slate-900"/>
         </div>
       </Link>
-      <div className="grid md:grid-cols-2 gap-12">
+      <div className="grid lg:grid-cols-1 gap-3">
         <img 
           src={selectedImage} 
           alt={product.name}
-          className="w-full rounded-xl" 
+          className="w-[80%] h-[90%] rounded-xl " 
         />
-        <div className="flex-col gap-8 items-center">
+        <div className="flex gap-8 items-center">
           {
             product.images.map((image, index) => (
               <img 
@@ -45,7 +45,7 @@ function ProductDetails() {
             ))
           }
         </div>
-
+                              {/* Related products */}
         {
           relatedProducts.length > 0 && (
             <div className="mt-12">
@@ -83,13 +83,15 @@ function ProductDetails() {
         }
 
       </div>
+
+                                     {/* product details */}
       <div>
         <h1 className="text-4xl font-bold">
           {product.name}
         </h1>
 
         <p className="text-2xl font-semibold text-green-600 mt-4">
-          {product.price}
+          {`\u20A6${product.price}`}
         </p>
 
         <div className="flex items-center gap-4 mt-8">
@@ -124,7 +126,7 @@ function ProductDetails() {
           </p>
 
           <p className="text-slate-600 mt-2">
-            Price: {product.price}
+            Price: {`\u20A6${product.price * quantity}`}
           </p>
         </div>
 
@@ -178,10 +180,7 @@ function ProductDetails() {
             </ul>
         </div>
 
-        <button className="mt-10 bg-green-600 hover:bg-green-700 text-white px-8 py-4 transition rounded-lg">
-          Request Quote
-        </button>
-        <QuoteRequestForm productName={product.name}/>
+        <QuoteRequestForm productName={product.name} className="hidden"/>
       </div>
     </section>
   )

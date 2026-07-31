@@ -9,7 +9,7 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTewXO001DmwFm7pHNQoZ1StYMgKEPcRnRq1dTOasTXIw&s=10",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFps9cFl-khF-jdl7zy1rRYsuDK8b18BkMYhmVJKIexA&s=10"
     ],
-    price: 'N165,000.00',
+    price: 165000.00,
     specifications: {
       power: "550W",
       warranty: "2 months",
@@ -34,7 +34,7 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlGYBHYKz7UEYxLxggy2_j0rlt_QOkuTLQWX0L55NBPw&s=10",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEcvI5HRPc769xJp7YvJZ6rR3dQwyjUeijnz-Uuso6IQ&s=10"
     ],
-    price: 'N650,000.00',
+    price: 650000.00,
     specifications: {
       power: "550W",
       warranty: "2 months",
@@ -60,7 +60,7 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDvNygzVijPvZSGU-asV5BXc2z3I_DO-qr4GFODAyUw&s=10",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHQ7H1-TWesQX6aUvE_b_K6aL7ph9mF-qDIXbakTjeQ&s=10"
     ],
-    price: 'N2,300,000.00',
+    price: 2300000.00,
     features: [
       "Provides 6,000+ cycles at 80% depth of discharge (DOD).",
       "Supports rapid charge and discharge rates (up to 100A–200A max depending on the model).",
@@ -83,7 +83,7 @@ const products = [
       "https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N135,000.00",
+    price: 135000.00,
     specifications: {
       power: "450W",
       warranty: "10 years",
@@ -106,7 +106,7 @@ const products = [
       "https://images.unsplash.com/photo-1548337138-e87d889cc369?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N210,000.00",
+    price: 210000.00,
     specifications: {
       power: "600W",
       warranty: "12 years",
@@ -128,7 +128,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N85,000.00",
+    price: 85000.00,
     specifications: {
       power: "200W",
       warranty: "5 years",
@@ -150,7 +150,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N55,000.00",
+    price: 55000.00,
     specifications: {
       power: "100W",
       warranty: "2 years",
@@ -172,7 +172,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N420,000.00",
+    price: 420000.00,
     specifications: {
       power: "3500W",
       warranty: "2 years",
@@ -194,7 +194,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N1,850,000.00",
+    price: 1850000.00,
     specifications: {
       power: "10000W",
       warranty: "5 years",
@@ -216,7 +216,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N180,000.00",
+    price: 180000.00,
     specifications: {
       power: "1500W",
       warranty: "1 year",
@@ -238,7 +238,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N1,450,000.00",
+    price: 1450000.00,
     specifications: {
       power: "12000W",
       warranty: "5 years",
@@ -260,7 +260,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N480,000.00",
+    price: 480000.00,
     specifications: {
       capacity: "100Ah",
       voltage: "12.8V",
@@ -282,7 +282,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N320,000.00",
+    price: 320000.00,
     specifications: {
       capacity: "220Ah",
       voltage: "12V",
@@ -304,7 +304,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N3,800,000.00",
+    price: 3800000.00,
     specifications: {
       capacity: "200Ah",
       voltage: "51.2V",
@@ -326,7 +326,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1558441719-67055468869c?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N115,000.00",
+    price: 115000.00,
     specifications: {
       current: "60A",
       maxPVInput: "150V",
@@ -348,7 +348,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1558441719-67055468869c?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N210,000.00",
+    price: 210000.00,
     specifications: {
       current: "100A",
       maxPVInput: "190V",
@@ -370,7 +370,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1558441719-67055468869c?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N25,000.00",
+    price: 25000.00,
     specifications: {
       current: "30A",
       maxPVInput: "50V",
@@ -392,7 +392,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N75,000.00",
+    price: 75000.00,
     specifications: {
       power: "300W LED",
       battery: "30Ah LifePO4",
@@ -414,7 +414,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N42,000.00",
+    price: 42000.00,
     specifications: {
       power: "100W LED",
       battery: "12Ah LifePO4",
@@ -436,7 +436,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N380,000.00",
+    price: 380000.00,
     specifications: {
       power: "1100W",
       maxHead: "80 meters",
@@ -458,7 +458,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N620,000.00",
+    price: 620000.00,
     specifications: {
       power: "2200W",
       maxHead: "35 meters",
@@ -480,7 +480,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1558441719-67055468869c?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N12,000.00",
+    price: 12000.00,
     specifications: {
       currentRating: "30A",
       voltage: "1000V DC",
@@ -502,7 +502,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1558441719-67055468869c?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N95,000.00",
+    price: 95000.00,
     specifications: {
       crossSection: "6.0mm²",
       voltageRating: "1.5kV DC",
@@ -524,7 +524,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N68,000.00",
+    price: 68000.00,
     specifications: {
       material: "Anodized AL6005-T5",
       windLoad: "Up to 60m/s",
@@ -546,7 +546,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N110,000.00",
+    price: 110000.00,
     specifications: {
       inputs: "6 String",
       outputs: "1 String",
@@ -568,7 +568,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N280,000.00",
+    price: 280000.00,
     specifications: {
       capacity: "518Wh",
       acOutput: "500W Pure Sine",
@@ -590,7 +590,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N1,150,000.00",
+    price: 1150000.00,
     specifications: {
       capacity: "2048Wh",
       acOutput: "2000W (4000W Surge)",
@@ -612,7 +612,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N22,000.00",
+    price: 22000.00,
     specifications: {
       power: "5W per light",
       battery: "1200mAh Ni-MH",
@@ -634,7 +634,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N120,000.00",
+    price: 120000.00,
     specifications: {
       power: "300W",
       warranty: "3 years",
@@ -656,7 +656,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N1,100,000.00",
+    price: 1100000.00,
     specifications: {
       power: "8000W",
       warranty: "3 years",
@@ -678,7 +678,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N210,000.00",
+    price: 210000.00,
     specifications: {
       capacity: "200Ah",
       voltage: "12V",
@@ -700,7 +700,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N28,000.00",
+    price: 28000.00,
     specifications: {
       power: "60W LED",
       battery: "6000mAh LiFePO4",
@@ -722,7 +722,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N8,500.00",
+    price: 8500.00,
     specifications: {
       ratedCurrent: "63A",
       voltage: "500V DC",
@@ -744,7 +744,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N18,000.00",
+    price: 18000.00,
     specifications: {
       voltage: "1000V DC",
       dischargeCurrent: "20kA - 40kA",
@@ -766,7 +766,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1548337138-e87d889cc369?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N270,000.00",
+    price: 270000.00,
     specifications: {
       power: "700W",
       warranty: "15 years",
@@ -788,7 +788,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N140,000.00",
+    price: 140000.00,
     specifications: {
       power: "2000W",
       warranty: "1 year",
@@ -810,7 +810,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N110,000.00",
+    price: 110000.00,
     specifications: {
       capacity: "400Ah",
       voltage: "3.2V",
@@ -832,7 +832,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1558441719-67055468869c?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N85,000.00",
+    price: 85000.00,
     specifications: {
       current: "40A",
       maxPVInput: "100V",
@@ -854,7 +854,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N160,000.00",
+    price: 160000.00,
     specifications: {
       resolution: "1080p HD",
       battery: "20Ah LifePO4",
@@ -876,7 +876,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N310,000.00",
+    price: 310000.00,
     specifications: {
       power: "750W",
       maxFlow: "15,000 L/hr",
@@ -898,7 +898,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N35,000.00",
+    price: 35000.00,
     specifications: {
       voltage: "110V - 240V AC",
       maxCurrent: "100A (via CT)",
@@ -920,7 +920,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N450,000.00",
+    price: 450000.00,
     specifications: {
       power: "24V DC Rechargeable",
       cleaningWidth: "60cm",
@@ -942,7 +942,7 @@ const products = [
     images: [
       "https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=800&q=80"
     ],
-    price: "N38,000.00",
+    price: 38000.00,
     specifications: {
       panelPower: "14W Mono",
       output: "5V / 2.1A USB",

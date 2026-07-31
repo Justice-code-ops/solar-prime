@@ -2,12 +2,12 @@ const express = require('express')
 
 const app = express()
 
-const PORT = 8000
+const PORT = 5000
 
 app.get('/', (req, res) => {
-    res.send('Welcome to Solar prime backend API')
+    res.send('Welcome to solar prime')
 })
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`)
+    console.log(`Server is running on http://localhost:${PORT}`)
 })
