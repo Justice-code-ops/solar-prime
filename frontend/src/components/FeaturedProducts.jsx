@@ -28,7 +28,7 @@ function FeaturedProducts() {
                 className="w-full border border-slate-300 py-3 px-4 outline-none focus:border-green-600 rounded-lg"
             />
         </div>
-        <div className="flex fle-wrap justify-center mb-12 gap-3">
+        <div className="flex flex-wrap justify-center mb-12 gap-3">
             {
                 categories.map((category) => (
                     <button
