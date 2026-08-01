@@ -1,4 +1,4 @@
-import React from 'react'
+import ServiceCard from "./ServiceCard"
 
 function Services() {
   return (
@@ -16,6 +16,31 @@ function Services() {
             <p className='mt-6 max-w-3xl mx-auto text-slate-600 leading-8'>
                 From residential homes to large commercial facilities, we provide large reliable energy solutions designed to reduce electricity costs and ensure uninterrupted power.
             </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <ServiceCard 
+                icon="🏠"
+                title="Residential Solar"
+                description="Reliable Solar Systems designed to power homes efficiently while reducing electricity costs"
+            />
+
+            <ServiceCard 
+                icon="🏢"
+                title="Commercial Solar"
+                description="Energy solutions that helps businesses reduce operational costs and improve energy independence"
+            />
+
+            <ServiceCard 
+                icon="🏭"
+                title="Industrial Solar"
+                description="Scalable Solar Systems engineered for factories, schools farms and large facilities."
+            />
+
+            <ServiceCard 
+                icon="🔧"
+                title="Maintenance & Support"
+                description="Professional inspections, maintenance and after-sales support to keep your systems performing."
+            />
         </div>
       </div>
     </section>
