@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import FeaturedProducts from "../components/FeaturedProducts"
+import Services from "../components/Services"
 
 
 function Home() {
@@ -8,7 +9,9 @@ function Home() {
     <>
         <Navbar />
         <Hero />
+        <Services />
         <FeaturedProducts />
+
     </>
   )
 }
