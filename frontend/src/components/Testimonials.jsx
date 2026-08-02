@@ -19,7 +19,7 @@ function Testimonials() {
                     Customer satisfaction is at the heart of everything we do. Here's what some of our customers have to say about working with Solar Prime.
                 </p>
             </div>
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 shadow-sm hover:shadow-xl'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 shadow-sm hover:shadow-xl p-3'>
                 {
                     testimonials.map((testimonial) => (
                         <TestimonialCard 

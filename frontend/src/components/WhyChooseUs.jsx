@@ -16,7 +16,7 @@ function WhyChooseUs() {
                 Discover why thousands of customers trust Power Prime for their energy needs.
             </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 shadow-sm hover:shadow-xl">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 shadow-sm hover:shadow-xl p-3">
             {
                 features.map((feature) => (
                     <FeatureCard 

@@ -18,7 +18,7 @@ function Services() {
                 From residential homes to large commercial facilities, we provide large reliable energy solutions designed to reduce electricity costs and ensure uninterrupted power.
             </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 shadow-sm hover:shadow-xl">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 shadow-sm hover:shadow-xl p-3">
             {
                 services.map((service) => (
                     <ServiceCard 

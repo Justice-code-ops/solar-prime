@@ -1,7 +1,3 @@
-import React from 'react'
-import { Icon } from 'lucide-react'
-
-
 function TestimonialCard( {name, role, message, rating: Icon} ) {
   return (
     <div className='bg-gray-100 p-6 rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300'>
@@ -17,10 +13,17 @@ function TestimonialCard( {name, role, message, rating: Icon} ) {
         {message}
       </p>   
       
-      <Icon 
-        size={16}
-        className='text-yellow-600 fill-current'
-      />
+      <div className='flex gap-1 mt-5'>
+        {
+            [...Array(5)].map((index) => (
+                <Icon 
+                    key={index}
+                    size={16}
+                    className='text-yellow-600 fill-current'
+                />
+            ))
+        }
+      </div>
     </div>
   )
 }
