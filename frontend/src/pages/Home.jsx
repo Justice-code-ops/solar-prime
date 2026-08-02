@@ -4,6 +4,7 @@ import FeaturedProducts from "../components/FeaturedProducts"
 import Services from "../components/Services"
 import WhyChooseUs from "../components/WhyChooseUs"
 import Testimonials from "../components/Testimonials"
+import FAQ from "../components/FAQ"
 
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
         <Services />
         <WhyChooseUs />
         <Testimonials />
+        <FAQ />
         <FeaturedProducts />
 
     </>

@@ -23,7 +23,7 @@ function FeaturedProducts() {
             <input 
                 type="text"
                 value={searchTerm}
-                placeholder="Search Product..."
+                placeholder="Search Solar Panels, inverters, batteries..."
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full border border-slate-300 py-3 px-4 outline-none focus:border-green-600 rounded-lg"
             />
@@ -53,14 +53,14 @@ function FeaturedProducts() {
                     Featured Products
                 </h2>
 
-                <p className="text-slate-600 max-w-2xl mt-t mx-auto">
+                <p className="text-slate-600 max-w-2xl mt-4 mx-auto">
                     Explore quality solar products carefully selected for reliable, efficient and long-lasting power solutions
                 </p>
             </div>
             <div className="flex justify-center">
                 {
                     filteredProducts.length === 0 && (
-                        <p className="text-slate-600 mt-10ntext-center text-2xl font-bold capitalize">
+                        <p className="text-slate-600 mt-10 text-center text-2xl font-bold capitalize">
                             No product Found!
                         </p>
                     )
