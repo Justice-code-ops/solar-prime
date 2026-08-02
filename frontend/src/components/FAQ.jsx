@@ -12,21 +12,28 @@ function FAQ() {
 
   return (
     <section className="py-24 space-y-6">
-        {
-            faqs.map((faq) => (
-                <div
-                onClick={() => open(faq.id)}
-                >
+        <div className="text-center mb-16">
+            <h2 className="text-green-600 font-semibold text-xl uppercase tracking-widest">
+                Frequently Asked Questions
+            </h2>
+
+            <p className='text-4xl font-bold mt-4 text-slate-900'>
+                Everything you need to know before switching to solar
+            </p>
+        </div>
+        <div>
+            {
+                faqs.map((faq) => (
                     <FAQItem 
                         key={faq.id}
                         question={faq.question}
                         answer={faq.answer}
                         isOpen={isOpen === faq.id}
-                        className="transition-all duration-300"
+                        onClick={() => open(faq.id)}
                     />
-                </div>
-            ))
-        }
+                ))
+            }
+        </div>
     </section>
   )
 }

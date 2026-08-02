@@ -7,7 +7,7 @@ function Testimonials() {
     <section className='py-24 bg-white'>
         <div className='max-w-7xl mx-auto px-6'>
             <div className='text-center mb-16'>
-                <p className='text-green-600 font-semi-bold tracking-widest uppercase'>
+                <p className='text-green-600 font-semibold tracking-widest uppercase'>
                     What Our Clients Say
                 </p>
 
