@@ -1,5 +1,5 @@
 import { useState } from "react"
-import faqs from "../data/FAQ"
+import faqs from "../data/faqs"
 import FAQItem from "./FAQItem"
 
 function FAQ() {
@@ -7,7 +7,7 @@ function FAQ() {
   const [isOpen, setIsOpen] = useState(null)
 
   const open = (id) => {
-    isOpen === null ? setIsOpen(id) : setIsOpen(null)
+    setIsOpen(isOpen === id ? null : id)
   }
 
   return (
@@ -15,10 +15,10 @@ function FAQ() {
         {
             faqs.map((faq) => (
                 <div
-                    key={faq.id}
-                    onClick={() => open(faq.id)}
-                    >
+                onClick={() => open(faq.id)}
+                >
                     <FAQItem 
+                        key={faq.id}
                         question={faq.question}
                         answer={faq.answer}
                         isOpen={isOpen === faq.id}
