@@ -5,6 +5,7 @@ import Services from "../components/Services"
 import WhyChooseUs from "../components/WhyChooseUs"
 import Testimonials from "../components/Testimonials"
 import FAQ from "../components/FAQ"
+import Footer from "../components/Footer"
 
 
 function Home() {
@@ -15,8 +16,8 @@ function Home() {
         <Services />
         <WhyChooseUs />
         <Testimonials />
-        <FAQ />
         <FeaturedProducts />
+        <FAQ />
 
     </>
   )
