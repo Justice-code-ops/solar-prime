@@ -4,8 +4,8 @@ function InputField() {
   return (
     <section>
         <div>
-            <h1>Power your future with Solar</h1>
-            <p>Tell us a little about your home or business and we'll design a solar system tailored to your needs</p>
+            <h1></h1>
+            <p></p>
         </div>
         <form action="">
 
