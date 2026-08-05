@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom"
+
+
 function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-slate-900 text-white px-8 py-4">
@@ -28,9 +31,11 @@ function Navbar() {
                     </li>
                 </ul>
 
-                <button className="bg-green-600 px-5 py-2 rounded-lg font-semibold hover:bg-green-700">
-                    Get a free Quote
-                </button>
+                <Link to={'/quote'}>                
+                    <button className="bg-green-600 px-5 py-2 rounded-lg font-semibold hover:bg-green-700">
+                        Get a free Quote
+                    </button>
+                </Link>
             </div>
         </div>
     </nav>

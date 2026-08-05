@@ -6,27 +6,31 @@ import { links } from '../data/links';
 function Footer() {
   return (
     <section className='flex flex-col bg-slate-900 text-green-800 p-8'>
-      <div className='flex gap-8 py-3'>
+      <div className='flex flex-col lg:flex-row gap-8 py-3'>
         <div className='flex flex-col gap-5'>
             <h1 className='font-semibold text-2xl'>Solar Prime</h1>
             <p className='text-sm max-w-xs'>
                 Solar Prime is a trusted provider of custom residential and commercial solar solutions. From upfront energy audits to professional installation and ongoing support, we build dependable power systems tailored to your exact needs.
             </p>
             <div className='flex gap-3 text-2xl'>
-                <FaWhatsapp />
-                <FaFacebook />
-                <FaInstagram />
-                <FaTwitter />
+                <a href='#'><FaWhatsapp /></a>
+                <a href="#"><FaFacebook /></a>
+                <a href="#"><FaInstagram /></a>
+                <a href="#"><FaTwitter /></a>
             </div>
         </div>
         <div className='flex flex-1 items-start justify-between'>
-          <div className='flex-flex-col gap-8'>
-            <h1 className='text-[18px] font-bold mb-3'>Quick Links</h1>
+          <div className='flex flex-col gap-8'>
+            <h1 className='text-[18px] font-bold'>Quick Links</h1>
             <div className='space-y-1'>
               {
                 links.map((link) => (
-                  <Link to={link.path} key={link.path}>
-                    <h1 className='hover:scale-105 transition-all duration-300'> {link.name} </h1>
+                  <Link
+                    to={link.path} 
+                    key={link.path} 
+                    className='flex flex-col hover:translate-x-1 transition-all duration-300'
+                  >
+                    {link.name}
                   </Link>
                 ))
               }
@@ -44,19 +48,17 @@ function Footer() {
           <div>
             <h1 className='text-[18px] font-bold mb-3'>Contact</h1>
             <div className='space-y-1'>
-              <p>Phone</p>
-              <p>Email</p>
-              <p>Address</p>
-              <p>Business Hours</p>
+              <p>07058981653</p>
+              <p>nwazuokejustice57@gmail.com</p>
+              <p>62/65 Osusu Rd. Aba, Abia State</p>
+              <p>We're Open 24/7</p>
             </div>
           </div>
         </div>
       </div>
-      <div className='flex gap-2 items-center border-t border-t-green-800 border-dotted'>
-        <p>&copy;</p>
-        <p> 2026 </p>
-        <p className='font-semibold text-[20px]'>Solar Prime.</p>
-        <p>All Rights Reserved.</p>
+      <div className='flex gap-2 items-center border-t justify-center border-t-green-800 border-dotted text-sm'>
+        <p>&copy; 2026 <span className='font-semibold text-[20px] pr-4'>Solar Prime.</span> All Rights Reserved.</p>
+        <p className='text-green-900 border-l border-l-green-700 pl-4'>Clean Energy, Reliable Solutions</p>
       </div>
     </section>
   )

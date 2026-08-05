@@ -4,6 +4,7 @@ import ProductDetails from './pages/ProductDetails'
 import Services from './components/Services'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import Quote from './pages/Quote'
 
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
         <Route 
           path='/services'
           element={<Services />}
+        />
+        <Route 
+          path='/quote'
+          element={<Quote />}
         />
       </Routes>
       <Footer />
