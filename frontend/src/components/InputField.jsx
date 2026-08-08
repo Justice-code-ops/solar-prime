@@ -1,15 +1,18 @@
 import React from 'react'
 
-function InputField() {
+function InputField( {label, type="text", placeholder, required=false} ) {
   return (
-    <section>
-        <div>
-            <h1></h1>
-            <p></p>
-        </div>
-        <form action="">
+    <section className='flex flex-col gap-2 my-2'>
+      <label className='font-medium text-slate-700'>
+        {label}
+      </label>
 
-        </form>
+      <input 
+        type={type}
+        placeholder={placeholder}
+        required={required}
+        className='border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 shadow-md'
+      />
     </section>
   )
 }
