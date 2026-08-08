@@ -26,8 +26,6 @@ function Quote() {
     event.preventDefault()
 
     setIsSubmitted(true)
-
-    console.log(isSubmitted)
   }
 
   return (
