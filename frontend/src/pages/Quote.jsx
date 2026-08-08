@@ -11,6 +11,8 @@ function Quote() {
     budget: ''
   })
 
+  const [isSubmitted, setIsSubmitted] = useState(false)
+
   const handleChange = (event) => {
     const {name, value} = event.target;
 
@@ -23,7 +25,9 @@ function Quote() {
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    console.log(formData)
+    setIsSubmitted(true)
+
+    console.log(isSubmitted)
   }
 
   return (
@@ -37,52 +41,74 @@ function Quote() {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit}>
-            <InputField
-              label="Full Name"
-              placeholder="John Doe"
-              name="name"
-              required
-              onChange={handleChange}
-            />
+          {
+            !isSubmitted ? (
 
-            <InputField 
-              label={"Email Address"}
-              type="email"
-              placeholder={"example@gmail.com"}
-              name={"email"}
-              required
-              onChange={handleChange}
-            />
+              <form onSubmit={handleSubmit}>
+                <InputField
+                  label="Full Name"
+                  placeholder="John Doe"
+                  name="name"
+                  required
+                  onChange={handleChange}
+                />
 
-            <InputField 
-              label={"Phone Number"}
-              type="tel"
-              name={"phone"}
-              placeholder={"+234 812 345 6789"}
-              onChange={handleChange}
-            />
+                <InputField 
+                  label={"Email Address"}
+                  type="email"
+                  placeholder={"example@gmail.com"}
+                  name={"email"}
+                  required
+                  onChange={handleChange}
+                />
 
-            <InputField 
-              label={"Address"}
-              placeholder={"Enter your Address"}
-              name={"address"}
-              required
-              onChange={handleChange}
-            />
+                <InputField 
+                  label={"Phone Number"}
+                  type="tel"
+                  name={"phone"}
+                  placeholder={"+234 812 345 6789"}
+                  onChange={handleChange}
+                />
 
-            <InputField 
-              label={"Estimated budget"}
-              placeholder={"Enter your budget"}
-              name="budget"
-              required
-              onChange={handleChange}
-            />
+                <InputField 
+                  label={"Address"}
+                  placeholder={"Enter your Address"}
+                  name={"address"}
+                  required
+                  onChange={handleChange}
+                />
 
-            <button type="submit" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg w-full my-10">
-              Request Quote
-            </button>
-          </form>
+                <InputField 
+                  label={"Estimated budget"}
+                  type="number"
+                  placeholder={"Enter your budget"}
+                  name="budget"
+                  min='1000'
+                  step='1000'
+                  required
+                  onChange={handleChange}
+                />
+
+                <button type="submit" className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg w-full my-10">
+                  Request Quote
+                </button>
+              </form>
+            ) : (
+              <div className="animate-fade-in-up flex flex-col items-center justify-center text-center min-h-100 px-6">
+                <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-6">
+                  <span className="text-3xl">✅</span>
+                </div>
+                <h2 className="text-3xl font-bold text-slate-900">
+                  Quote Request Recieved
+                </h2>
+
+                <p className="mt-4 text-slate-600 leading-7 max-w-md">
+                  Thankyou for choosing Solar Prime, we'll review your request and get back to you immediately.
+                </p>
+              </div>
+            )
+          }
+
         </div>
 
         <div className='bg-slate-200 rounded-2xl h-125 flex flex-col gap-8 items-center justify-center'>
