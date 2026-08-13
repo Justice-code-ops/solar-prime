@@ -142,7 +142,7 @@ function ProductDetails() {
           <div className="grid grid-cols-2 gap-4">
             {
               Object.entries(product.specifications).map(([key, value]) => (
-                <div key={key} className="rounded-lg bg-gray-100 p-4">
+                <div key={key} className="w-125 rounded-lg bg-gray-100 p-4">
                   <p className="capitalize text-gray-500">
                     {key}
                   </p>
