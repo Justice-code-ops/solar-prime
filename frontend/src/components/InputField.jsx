@@ -11,6 +11,7 @@ function InputField( { label, ...inputProps } ) {
         {...inputProps}
         className='border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 shadow-md'
       />
+
     </div>
   )
 }
